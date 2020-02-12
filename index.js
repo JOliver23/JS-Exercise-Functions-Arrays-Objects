@@ -24,7 +24,7 @@ function addNumbers(num1, num2) {
 // 👇 COMPLETE YOUR WORK BELOW 👇
 
 /**
- * ### Challenge `makePersonObject`
+ * ### Challenge1 `makePersonObject`
  * 
  * @instructions
  * This function should take an id, a name and an email as arguments,
@@ -47,10 +47,10 @@ function makePersonObject(idNum, nstr, estr) {
   
   return person;
 }
-console.log(makePersonObject(5, "Leia", "leia@leia.com"));
+//console.log(makePersonObject(5, "Leia", "leia@leia.com"));
 
 /**
- * ### Challenge `getName`
+ * ### Challenge2 `getName`
  * 
  * @instructions
  * This function takes as its only argument
@@ -66,9 +66,9 @@ function getName(Object) {
   return ("Hello, my name is " + Object.name);
   /* code here */
 }
-console.log(getName(person));
+//console.log(getName(person));
 /**
- * ### Challenge `makeSmartPerson`
+ * ### Challenge3 `makeSmartPerson`
  * 
  * @instructions
  * This function takes a single `name` argument and returns an object.
@@ -134,7 +134,7 @@ function get3rdCar(inventory) {
 
 
 /**
- * ### Challenge `getCarInfoByIndex`
+ * ### Challenge4 `getCarInfoByIndex`
  * 
  * @instructions
  * getCarInfoByIndex takes two arguments:
@@ -151,7 +151,7 @@ function getCarInfoByIndex(inventory, index) {
 }
 
 /**
- * ### Challenge `getLastCarInfo`
+ * ### Challenge5 `getLastCarInfo`
  * 
  * @instructions
  * getLastCarInfo takes a single argument:
@@ -161,7 +161,9 @@ function getCarInfoByIndex(inventory, index) {
  * For example, if getLastCarInfo is invoked passing the inventory inside /data/inventory.js,
  * it will return `This is a Lincoln Town Car`.
 */
-function getLastCarInfo(/* code here */) {
+function getLastCarInfo(Array) {
+  //let arrList = Array.length-1;
+  return `This is a ${Array[Array.length-1].car_make} ${Array[Array.length-1].car_model}`;
   /* code here */
 }
 
