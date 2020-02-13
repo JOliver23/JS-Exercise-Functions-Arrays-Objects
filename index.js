@@ -23,7 +23,7 @@ function addNumbers(num1, num2) {
 // 👇 COMPLETE YOUR WORK BELOW 👇
 // 👇 COMPLETE YOUR WORK BELOW 👇
 
-/**
+/*Challenge1*
  * ### Challenge1 `makePersonObject`
  * 
  * @instructions
@@ -49,7 +49,7 @@ function makePersonObject(idNum, nstr, estr) {
 }
 //console.log(makePersonObject(5, "Leia", "leia@leia.com"));
 
-/**
+/*Challenge2*
  * ### Challenge2 `getName`
  * 
  * @instructions
@@ -67,7 +67,7 @@ function getName(Object) {
   /* code here */
 }
 //console.log(getName(person));
-/**
+/*Challenge3*
  * ### Challenge3 `makeSmartPerson`
  * 
  * @instructions
@@ -92,9 +92,6 @@ function makeSmartPerson(smartName) {
   };
   return smartPerson;
 }
-
-
-
 /*
 // ⭐️ Example Test Data ⭐️
 
@@ -137,7 +134,7 @@ function get3rdCar(inventory) {
 // 👇 COMPLETE YOUR WORK BELOW 👇
 
 
-/**
+/*Challenge4*
  * ### Challenge4 `getCarInfoByIndex`
  * 
  * @instructions
@@ -154,7 +151,7 @@ function getCarInfoByIndex(inventory, index) {
   /* code here */
 }
 
-/**
+/*Challenge5*
  * ### Challenge5 `getLastCarInfo`
  * 
  * @instructions
@@ -171,7 +168,7 @@ function getLastCarInfo(Array) {
   /* code here */
 }
 
-/**
+/*Challenge6*
  * ### Challenge6 `getCarInfoById`
  * 
  * @instructions
@@ -197,7 +194,17 @@ function getCarInfoById(Array, idNum) {
  * sortCarInventory returns an inventory that is sorted by car_model, ascending [A-Z].
 */
 function sortCarInventory(Array) {
-  return Array.car_model.sort();
+  return Array.sort(function (a, b){
+    var nameA = a.car_model.toUpperCase();
+    var nameB = b.car_model.toUpperCase();
+    if (nameA < nameB) {
+      return -1;
+    }
+    if (nameA > nameB) {
+      return 1;
+    }
+    return 0;
+  });
   /* code here */
 }
 
