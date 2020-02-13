@@ -207,8 +207,8 @@ function sortCarInventory(Array) {
   });
 }
 
-/**
- * ### Challenge8 `getModelYears`
+/*Challenge8*
+ * ###  `getModelYears`
  * 
  * @instructions
  * We need the years from every car in the inventory!
@@ -220,13 +220,9 @@ function getModelYears(arr) {
   let carYear = [];
   for (let i = 0 ; i < arr.length; i++){
     carYear.push(arr[i].car_year);
-    //carYear.push(Array.values(Array[i].car_year));
   }
   return carYear;
 }
-  
-  /* code here */
-
 
 /**
  * ### Challenge9 `getOlderCars`
@@ -241,16 +237,24 @@ function getModelYears(arr) {
  * in the same order as they appear in the original inventory.
 */
 
-function getOlderCars(/*Array, maxNum*/) {
-  /*let carMatch = [];
-  Array.forEach(function(maxNum) {
-    var c = Array.car_year <= maxNum;
-    if (c = true) {
-      carMatch.push(`${Array.car_make} ${Array.car_model} ${Array.car_year}`);
+function getOlderCars(Array, maxYear) {
+  let carMatch = [];
+  let midCar = [];
+  let allCars = [];
+
+  for (let i = 0; i < Array.length; i++){
+    if (Array[i].car_year <= maxYear){
+      carMatch.push(Array[i]);
+      allCars.push(Array[i]);
     }
-  });
+    else if (Array[i].car_year > maxYear) {
+      allCars.push(Array[i]);
+    }
+    else {
+      midCar.push(Array[i])
+    }
+  }
   return carMatch;
- */
 }
 
 /**
