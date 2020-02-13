@@ -271,9 +271,22 @@ function getOlderCars(Array, maxYear) {
 function getGermanCars(Array) {
   let germCar = [];
   for (let i = 0; i < Array.length; i++){
-    if (Array[i].car_make === 'Audi'||'Mercedes-Benz'||'Volkswagen'||'BMW'){
+    if (Array[i].car_make === 'Audi') {
       germCar.push(Array[i]);
     }
+    else if (Array[i].car_make === 'Mercedes-Benz'){
+      germCar.push(Array[i]);
+    }
+    else if (Array[i].car_make === 'Volkswagen'){
+      germCar.push(Array[i]);
+    }
+    else if (Array[i].car_make === 'BMW'){
+      germCar.push(Array[i]);
+    }
+    else{
+      
+    }
+
   }
   return germCar;
   /* code here */
