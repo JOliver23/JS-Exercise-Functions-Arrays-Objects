@@ -80,13 +80,17 @@ function getName(Object) {
  *         and returns a string like `Hello, my name is {name}`.
  *         where `{name}` is the name passed into `makeSmartPerson`.
 */
-function makeSmartPerson() {
- /* const smartPerson ={};
-  smartPerson.name = smartName;
-  console.log(smartPerson);
-  smartPerson.add = add2Nums(x,y) {
-    return x + y;
-  }*/
+function makeSmartPerson(smartName) {
+  let smartPerson = {
+    name: smartName,
+    sum(a, b){
+    return a + b;
+    },
+    speak(){
+    return `Hello, my name is ${smartName}`
+    }
+  };
+  return smartPerson;
 }
 
 
@@ -216,7 +220,7 @@ function getModelYears(Array) {
 }
 
 /**
- * ### Challenge `getOlderCars`
+ * ### Challenge9 `getOlderCars`
  * 
  * @instructions
  * We need a utility to find older cars!
@@ -227,7 +231,15 @@ function getModelYears(Array) {
  * with a `car_year` which is at most the given desired max year,
  * in the same order as they appear in the original inventory.
 */
-function getOlderCars(/* code here */) {
+function getOlderCars(Array, maxNum) {
+  let carMatch = [];
+  Array.forEach(function(maxNum) {
+    var c = Array.car_year <= maxNum;
+    if (c = true) {
+      carMatch.push(`${Array.car_make} ${Array.car_model} ${Array.car_year}`);
+    }
+  });
+  return carMatch;
   /* code here */
 }
 
