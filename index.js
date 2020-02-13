@@ -224,7 +224,7 @@ function getModelYears(arr) {
   return carYear;
 }
 
-/**
+/*Challenge9*
  * ### Challenge9 `getOlderCars`
  * 
  * @instructions
@@ -257,8 +257,8 @@ function getOlderCars(Array, maxYear) {
   return carMatch;
 }
 
-/**
- * ### Challenge `getGermanCars`
+/*Challenge10*
+ * ### Challenge10 `getGermanCars`
  * 
  * @instructions
  * We need a utility to find German cars!
@@ -268,7 +268,14 @@ function getOlderCars(Array, maxYear) {
  * made by either `Audi` or `Mercedes-Benz` or `Volkswagen` or `BMW`,
  * in the same order as they appear in the original inventory.
 */
-function getGermanCars(/* code here */) {
+function getGermanCars(Array) {
+  let germCar = [];
+  for (let i = 0; i < Array.length; i++){
+    if (Array[i].car_make === 'Audi'||'Mercedes-Benz'||'Volkswagen'||'BMW'){
+      germCar.push(Array[i]);
+    }
+  }
+  return germCar;
   /* code here */
 };
 
@@ -290,9 +297,9 @@ function getGermanCars(/* code here */) {
  *   return num * 2
  * }
 */
-const sum = null; // code here!
-const addFive = null; // code here!
-const argTimesTwo = null; // code here!
+const sum = (a,b) => {a + b}; // code here!
+const addFive = (a) => {a + 5}; // code here!
+const argTimesTwo = (a) => {a * 2}; // code here!
 
 /**
  * ### Challenge `carMaker`
