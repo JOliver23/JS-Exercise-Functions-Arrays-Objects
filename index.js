@@ -168,7 +168,7 @@ function getLastCarInfo(Array) {
 }
 
 /**
- * ### Challenge `getCarInfoById`
+ * ### Challenge6 `getCarInfoById`
  * 
  * @instructions
  * getCarInfoById takes two arguments:
@@ -179,19 +179,21 @@ function getLastCarInfo(Array) {
  * For example, if getCarInfoById is invoked with the inventory and the number 1,
  * it will return `This is a Lincoln Navigator`.
 */
-function getCarInfoById(/* code here */) {
+function getCarInfoById(Array, idNum) {
+  return `This is a ${Array[idNum-1].car_make} ${Array[idNum-1].car_model}`
   /* code here */
 }
 
 /**
- * ### Challenge `sortCarInventory`
+ * ### Challenge7 `sortCarInventory`
  * 
  * @instructions
  * sortCarInventory takes a single argument:
  *     (1) an array which is an inventory of cars like the one inside /data/inventory.js.
  * sortCarInventory returns an inventory that is sorted by car_model, ascending [A-Z].
 */
-function sortCarInventory(/* code here */) {
+function sortCarInventory(Array) {
+  return Array.sort(Array.car_model)
   /* code here */
 }
 
